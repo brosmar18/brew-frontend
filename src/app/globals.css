@@ -108,7 +108,7 @@ a {
   margin-right: 2rem;
 }
 
-.app__wrapper_img img {
+.app__wrapper_img-item {
   width: 80%;
 }
 
@@ -196,7 +196,7 @@ a {
     margin: 0 0 5rem 0;
   }
 
-  .app__wrapper_img img {
+  .app__wrapper_img-item {
     width: 100%;
   }
 }
