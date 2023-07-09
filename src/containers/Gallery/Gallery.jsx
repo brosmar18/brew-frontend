@@ -16,10 +16,13 @@ const Gallery = () => {
       current.scrollLeft += 300;
     }
   };
+
   return (
-    <div>
-      Gallery
-    </div>
+    <section className='app__gallery flex__center'>
+      <div className='app__gallery-content'>
+      <SubHeader title="Instagram" />
+      </div>
+    </section>
   )
 }
 
