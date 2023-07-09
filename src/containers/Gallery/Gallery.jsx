@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
-import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import { SubHeader } from '@/components';
 import './Gallery.scss';
 import {images} from '@/constants/images.jsx';
@@ -33,7 +33,6 @@ const Gallery = () => {
             {[images.gallery01, images.gallery02, images.gallery03, images.gallery04].map((image, index) => (
               <div className='app__gallery-images_card flex__center' key={`gallery_image-${index + 1}`}>
                 <Image src={image} alt='gallery' width={301} height={447} />
-                <BsInstagram className='gallery__image-icon' />
               </div>
             ))}
         </div>

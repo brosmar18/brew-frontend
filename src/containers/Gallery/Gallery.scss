@@ -54,13 +54,9 @@
             opacity: 0.35;
         }
     }
-
-    .gallery__image-icon {
-        &:hover {
-            opacity: 1;
-        }
-    }
 }
+
+
 
 .app__gallery-images_arrows {
     width: 100%;
@@ -83,6 +79,7 @@
         color: var(--text-color);
     }
 }
+
 @media screen and (min-width: 2000px) {
     .app__gallery-content button {
         margin-top: 2rem;
@@ -119,8 +116,8 @@
 @media screen and (max-width: 650px) {
     .app__gallery {
         padding: 4rem 0 4rem 2rem;
-    }  
-    
+    }
+
     .app__gallery-content {
         min-width: 100%;
     }
