@@ -15,6 +15,13 @@ const NavBar = () => {
         <div className='nav__logo'>
         <Image src="/logo.png" alt='logo' width={150} height={20} className='nav__logo-img' />
         </div>
+        <ul className='nav__links'>
+            {['home', 'menu', 'catering', 'about', 'contact'].map((item) => (
+                <li key={item} className='p__opensans'>
+                    <Link href={item === 'home' ? '/' : `/${item}`}>{item}</Link>
+                </li>
+            ))}
+        </ul>
     </nav>
   )
 }
