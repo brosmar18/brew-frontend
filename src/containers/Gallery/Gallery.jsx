@@ -28,8 +28,16 @@ const Gallery = () => {
       <button type="button" className="custom__button">Explore Menu</button>
       </div>
       <div className='app__gallery-images'>
-      <Image src={images.gallery01} alt='gallery' width={301} height={447}/>
-
+      {/* <Image src={images.gallery01} alt='gallery' width={301} height={447}/> */}
+        <div className='app__gallery-images_container'
+          ref={scrollRef}>
+            {[images.gallery01, images.gallery02, images.gallery03, images.gallery04].map((image, index) => (
+              <div className='app__gallery-images_card flex__center' key={`gallery_image-${index + 1}`}>
+                <Image src={image} alt='gallery' width={301} height={447} />
+                <BsInstagram className='gallery__image-icon' />
+              </div>
+            ))}
+        </div>
       </div>
     </section>
   )
