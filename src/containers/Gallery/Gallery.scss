@@ -54,4 +54,10 @@
             opacity: 0.35;
         }
     }
+
+    .gallery__image-icon {
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
