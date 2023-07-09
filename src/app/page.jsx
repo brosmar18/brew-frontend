@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <Gallery />
       <Intro />
+      <Gallery />
     </div>
   )
 }

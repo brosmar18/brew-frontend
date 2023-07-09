@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Header = () => {
     return (
-        <header className='app__header app__wrapper section__padding'>
+        <header className='app__header app__wrapper section__padding  app__bg'>
             <div className='app__wrapper_info'>
                 <SubHeader title="Brewing Passion in Every Pour" />
                 <h1 className='app__header-h1'>Your Kitchen Away From Home</h1>
