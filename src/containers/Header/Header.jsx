@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react'
 import { SubHeader } from '@/components';
 import './Header.scss';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Header = () => {
     return (
@@ -12,9 +15,13 @@ const Header = () => {
                 <p className='p__opensans' style={{ margin: '2rem 0' }}>At Brewhemia, we blend the warmth of Mexican cuisine with the art of coffee. Savor our award-winning breakfast burritos with a cup of our finest brew.</p>
                 <button type='button' className='custom__button'>Explore Menu</button>
             </div>
-            <div className='app__wrapper_img'>
-                <Image className='app__wrapper_img-item' src="/welcome.png" alt='Latte and croissant on a table'  width={547} height={547} />
-            </div>
+            <motion.div
+                className='app__wrapper_img'
+                whileInView={{scale: [0, 1]}}
+                transition={{duration: 1, ease: 'easeInOut'}}
+            >
+                <Image className='app__wrapper_img-item' src="/welcome.png" alt='Latte and croissant on a table' width={547} height={547} style={{borderRadius: '5%'}} />
+            </motion.div>
         </header>
     )
 }
