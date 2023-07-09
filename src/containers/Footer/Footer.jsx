@@ -18,7 +18,7 @@ const Footer = () => {
                     <p className="p__opensans">andrea@brewhemia.com</p>
                 </div>
                 <div className="app__footer-links_logo">
-                    <Image src='/logo.png' alt="footer_logo" width={150} height={20}/>
+                    <Image src='/logo.png' alt="footer_logo" width={150} height={20} />
                     <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
                     <Image src='/spoon.png' className="spoon__img" style={{ marginTop: 15 }} width={45} height={10} />
                     <div className="app__footer-links_icons">
@@ -26,6 +26,13 @@ const Footer = () => {
                         <FiTwitter />
                         <FiInstagram />
                     </div>
+                </div>
+                <div className="app__footer-links_work">
+                    <h1 className="app__footer-headtext">Working Hours</h1>
+                    <p className="p__opensans">Tuesday - Sunday:</p>
+                    <p className="p__opensans">08:00 am - 2:00 pm</p>
+                    <p className="p__opensans">Monday:</p>
+                    <p className="p__opensans">Closed</p>
                 </div>
             </div>
         </div>
