@@ -17,16 +17,20 @@ const Footer = () => {
                     <p className="p__opensans">(319) 364-0802</p>
                     <p className="p__opensans">andrea@brewhemia.com</p>
                 </div>
+
                 <div className="app__footer-links_logo">
                     <Image src='/logo.png' alt="footer_logo" width={150} height={20} />
                     <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
                     <Image src='/spoon.png' className="spoon__img" style={{ marginTop: 15 }} width={45} height={10} />
+
                     <div className="app__footer-links_icons">
                         <FiFacebook />
                         <FiTwitter />
                         <FiInstagram />
                     </div>
                 </div>
+
+
                 <div className="app__footer-links_work">
                     <h1 className="app__footer-headtext">Working Hours</h1>
                     <p className="p__opensans">Tuesday - Sunday:</p>
@@ -35,6 +39,7 @@ const Footer = () => {
                     <p className="p__opensans">Closed</p>
                 </div>
             </div>
+            
             <div className="footer__copyright">
                 <p className="p__opensans">Brewhemia. All Rights reserved.</p>
             </div>
