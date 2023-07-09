@@ -68,13 +68,13 @@ a {
   align-items: center;
 }
 
-/* .app__bg {
-  background: url('./assets/bg.png');
+.app__bg {
+  background: url('/bg.png');
   background-position: center;
   background-size: contain;
   background-repeat: repeat;
   background-attachment: fixed;
-} */
+}
 
 .app__wrapper {
   display: flex;
@@ -150,7 +150,7 @@ a {
 
 .headtext__cormorant {
   font-family: var(--font-base);
-  color: var(--color-golden);
+  color: var(--primary-color);
   font-size: 64px;
   line-height: 83.2px;
   letter-spacing: 0.04em;
