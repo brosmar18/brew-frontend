@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import {Header, Intro, Gallery} from '@/containers';
+import {Header, Intro, Gallery, Footer} from '@/containers';
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Header />
       <Intro />
       <Gallery />
+      <Footer />
     </div>
   )
 }
