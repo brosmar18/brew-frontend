@@ -2,3 +2,18 @@
     flex-direction: row;
     padding: 4rem 0 4rem 6rem;
 }
+
+.app__gallery-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 500px;
+    padding-right: 2rem;
+
+    button {
+        margin-top: 1rem;
+    }
+}
+
