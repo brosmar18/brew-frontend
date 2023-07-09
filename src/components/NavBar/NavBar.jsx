@@ -22,6 +22,11 @@ const NavBar = () => {
                 </li>
             ))}
         </ul>
+        <div className='nav__login'>
+            <Link href={`#`} className='p__opensans nav__login-link'>Log In / Registration</Link>
+            <div />
+            <Link href={`#`} className='p__opensans nav__login-link'>Book Event</Link>
+        </div>
     </nav>
   )
 }
