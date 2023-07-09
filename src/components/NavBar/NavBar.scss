@@ -46,3 +46,23 @@
         display: none;
     }
 }
+
+.nav__login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .nav__login-link {
+        margin: 0 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--hover-color);
+        }
+    }
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
