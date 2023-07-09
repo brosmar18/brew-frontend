@@ -8,9 +8,15 @@ const Intro = () => {
     const [playVideo, setPlayVideo] = useState(false);
     const vidRef = useRef();
   return (
-    <div>
-      <h1>Intro</h1>
-    </div>
+    <section className='app__video'>
+        <video
+        ref={vidRef}
+        src='/brewhemia.mp4'
+        type="video/mp4"
+        loop
+        controls={false}
+      />
+    </section>
   )
 }
 
