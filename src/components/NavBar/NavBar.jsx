@@ -39,7 +39,7 @@ const NavBar = () => {
                 <ul>
                     {['home', 'menu', 'catering', 'about', 'contact'].map((item) => (
                         <li key={item}>
-                            <Link className='nav__mobile-link opensans' href={item === 'home' ? '/' : `/${item}`} onClick={() => setToggleMenu(false)}>{item}</Link>
+                            <Link className='nav__mobile-link p__opensans' href={item === 'home' ? '/' : `/${item}`} onClick={() => setToggleMenu(false)}>{item}</Link>
                         </li>
                     ))}
                 </ul>
