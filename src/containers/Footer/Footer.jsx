@@ -6,7 +6,7 @@ import { FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
 
 const Footer = () => {
     return (
-        <div className='app__footer section__padding'>
+        <section className='app__footer section__padding'>
             <FooterOverlay />
             <NewsLetter />
 
@@ -35,7 +35,10 @@ const Footer = () => {
                     <p className="p__opensans">Closed</p>
                 </div>
             </div>
-        </div>
+            <div className="footer__copyright">
+                <p className="p__opensans">Brewhemia. All Rights reserved.</p>
+            </div>
+        </section>
     )
 }
 
