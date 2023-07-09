@@ -1,3 +1,11 @@
-* {
-    color: white;
+.nav {
+    width: 100%;
+    background: rgba(21, 21, 21, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 8px 32px 0 rgba(14, 17, 17, 0.37);
+    border: 1px solid rgba(221, 221, 221, 0.18);
+    z-index: 2;
 }
