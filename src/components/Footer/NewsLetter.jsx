@@ -1,6 +1,6 @@
 import React from 'react'
-import SubHeading from '../SubHeading/SubHeading'
-import './NewsLetter.css';
+import SubHeading from '../SubHeader/SubHeader';
+import './NewsLetter.scss';
 
 function NewsLetter() {
   return (

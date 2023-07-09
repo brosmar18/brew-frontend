@@ -1,5 +1,5 @@
 import React from 'react'
-import './FooterOverlay.css';
+import './FooterOverlay.scss';
 
 function FooterOverlay() {
   return (
