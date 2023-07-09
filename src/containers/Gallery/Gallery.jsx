@@ -23,6 +23,7 @@ const Gallery = () => {
       <SubHeader title="Instagram" />
       <h1 className="headtext__cormorant">Photo Gallery</h1>
       <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Step into our world through the lens of our Photo Gallery. From our artisan coffee and vibrant Mexican dishes to our cozy café ambiance and heartwarming community moments, each picture tells a piece of the Brewhemia story. Enjoy the visual journey!</p>
+      <button type="button" className="custom__button">View More</button>
       </div>
     </section>
   )
