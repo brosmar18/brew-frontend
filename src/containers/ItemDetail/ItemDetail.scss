@@ -35,6 +35,22 @@
         max-height: 60vh;
         margin-bottom: 2rem;
     }
+
+    .back-button {
+        border: none;
+        background: var(--primary-color);
+        color: var(--text-color);
+        cursor: pointer;
+        z-index: 20;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: rgba(240, 84, 84, 0.35);
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {

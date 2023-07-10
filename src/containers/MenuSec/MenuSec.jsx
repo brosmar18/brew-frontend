@@ -80,9 +80,9 @@ const Menu = () => {
         </div>
       </div>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
-        <ItemDetail item={currentItem} />
-        <button onClick={closeModal}>Close</button>
+        <ItemDetail item={currentItem} closeModal={closeModal} />
       </Modal>
+
 
     </div>
   )
