@@ -11,7 +11,7 @@ const breakfast = [
     title: 'Egg & Cheese Sandwhich',
     price: '$6.99',
     desc: 'Your choice of bread: white, wheat, sourdough, croissant, or gluten-free',
-    imgUrl: '/eggCheeseSandwhich.png'
+    imgUrl: '/eggCheese.png'
   },
   {
     title: 'Mother Earth: Bowl/Wrap/Omelette',
@@ -44,13 +44,13 @@ const lunch = [
     title: 'Curry Chicken Sandwhich',
     price: '$8.99',
     desc: 'Curry mayo chicken salad on a croissant',
-    imgUrl: 'curryChicken.png'
+    imgUrl: '/curryChicken.png'
   },
   {
     title: "Turkey Confetta Sandwhich",
     price: '$8.99',
     desc: 'Turkey, cranberry & feta cheese',
-    imgUrl: 'turkeyConfetta.png'
+    imgUrl: '/turkeyConfetta.png'
   },
   {
     title: 'BBQ Pulled Pork Sliders',
@@ -68,7 +68,7 @@ const lunch = [
     title: 'Veggie Melt',
     price: '$8.99',
     desc: 'Hummus, sautted veggies & white cheddar',
-    imgUrl: 'veggieMelt.png'
+    imgUrl: '/veggieMelt.png'
   },
   {
     title: 'Medeteranian wrap',
