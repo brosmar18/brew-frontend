@@ -1,5 +1,5 @@
 import data from './data';
 
-export {
+export default {
     data
 };
