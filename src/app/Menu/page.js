@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import {MenuSec} from '@/containers';
 
 const Menu = () => {
   return (
     <div>
-      <h1>Menu Page</h1>
+      <MenuSec />
     </div>
   )
 }
