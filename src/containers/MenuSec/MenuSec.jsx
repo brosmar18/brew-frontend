@@ -1,6 +1,6 @@
 import React from 'react'
 import { SubHeader, MenuItem } from '@/components';
-import data from '@/constants';
+import data from '@/constants/data';
 import Image from 'next/image';
 import './MenuSec.scss';
 
@@ -18,7 +18,7 @@ const Menu = () => {
         <div className="app__specialMenu-menu_breakfast  flex__center">
           <p className="app__specialMenu-menu_heading">Breakfast</p>
           <div className="app__specialMenu_menu_items">
-            {data.breakfast.map((breakfastItem, index) => (
+            {data && data.breakfast && data.breakfast.map((breakfastItem, index) => (
               <div className='app__menu-items'>
                 <MenuItem key={breakfastItem.title + index} title={breakfastItem.title} price={breakfastItem.price} desc={breakfastItem.desc} />
                 <button type="button" className="custom__button app__menu-button">View Item</button>
@@ -34,9 +34,9 @@ const Menu = () => {
         <div className="app__specialMenu-menu_lunch  flex__center">
           <p className="app__specialMenu-menu_heading">Lunch</p>
           <div className="app__specialMenu_menu_items">
-            {data.breakfast.map((breakfastItem, index) => (
-              <div key={breakfastItem.title + index} className='app__menu-items'>
-                <MenuItem title={breakfastItem.title} price={breakfastItem.price} desc={breakfastItem.desc} />
+            {data && data.lunch && data.lunch.map((lunchItem, index) => (
+              <div key={lunchItem.title + index} className='app__menu-items'>
+                <MenuItem title={lunchItem.title} price={lunchItem.price} desc={lunchItem.desc} />
                 <button type="button" className="custom__button app__menu-button">View Item</button>
               </div>
             ))}
