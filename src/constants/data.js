@@ -79,4 +79,6 @@ const awards = [
   },
 ];
 
-export default { breakfast, lunch, awards };
+const data = {breakfast, lunch, awards};
+
+export default data;
