@@ -13,7 +13,7 @@ const Menu = () => {
     </div>
 
     <div className="app__specialMenu-menu">
-      <div className="app__specialMenu-menu_wine  flex__center">
+      <div className="app__specialMenu-menu_breakfast  flex__center">
         <p className="app__specialMenu-menu_heading">Breakfast</p>
         <div className="app__specialMenu_menu_items">
           {data.breakfast.map((breakfastItem, index) => (
@@ -26,7 +26,7 @@ const Menu = () => {
         <Image src='/menu.png' alt="menu__img" width={410} height={721} />
       </div>
 
-      <div className="app__specialMenu-menu_cocktails  flex__center">
+      <div className="app__specialMenu-menu_lunch  flex__center">
         <p className="app__specialMenu-menu_heading">Lunch</p>
         <div className="app__specialMenu_menu_items">
           {data.lunch.map((cocktail, index) => (
