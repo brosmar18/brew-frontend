@@ -9,7 +9,7 @@ const Menu = () => {
     <div className="app__specialMenu flex__center section__padding app__bg" id="menu">
     <div className="app__specialMenu-title">
       <SubHeader title="Menu that fits your palatte" />
-      <h1 className="headtext__cormorant">Today&apos;s Special</h1>
+      <h1 className="headtext__cormorant">Our Menu</h1>
     </div>
 
     <div className="app__specialMenu-menu">
