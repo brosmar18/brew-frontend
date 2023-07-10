@@ -41,10 +41,6 @@ const Menu = () => {
           </div>
         </div>
       </div>
-
-      <div style={{ marginTop: 15 }}>
-        <button type="button" className="custom__button">View More</button>
-      </div>
     </div>
   )
 }
