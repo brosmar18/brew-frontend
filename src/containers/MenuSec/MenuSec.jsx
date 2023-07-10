@@ -19,8 +19,8 @@ const Menu = () => {
           <p className="app__specialMenu-menu_heading">Breakfast</p>
           <div className="app__specialMenu_menu_items">
             {data && data.breakfast && data.breakfast.map((breakfastItem, index) => (
-              <div className='app__menu-items'>
-                <MenuItem key={breakfastItem.title + index} title={breakfastItem.title} price={breakfastItem.price} desc={breakfastItem.desc} />
+              <div key={breakfastItem.title + index} className='app__menu-items'>
+                <MenuItem title={breakfastItem.title} price={breakfastItem.price} desc={breakfastItem.desc} />
                 <button type="button" className="custom__button app__menu-button">View Item</button>
               </div>
             ))}
