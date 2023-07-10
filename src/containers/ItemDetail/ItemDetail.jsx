@@ -12,7 +12,7 @@ const ItemDetail = ({ item }) => {
             <h1>{item.title}</h1>
             <p>{item.price}</p>
             <p>{item.desc}</p>
-            <Image src='/default-item-image.png' alt={item.title} width={100} height={100} />
+            <Image src={item.imgUrl} alt={item.title} width={100} height={100} />
         </div>
     )
 }
