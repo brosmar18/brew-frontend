@@ -17,21 +17,25 @@ const breakfast = [
     title: 'Mother Earth: Bowl/Wrap/Omelette',
     price: '$8.99',
     desc: 'Eggs, green peppers, onions, mushrooms, celery & cheese',
+    imgUrl: ''
   },
   {
     title: 'Aesops: Bowl/Wrap/Omelette',
     price: '$8.99',
     desc: 'Eggs, hummus, feta cheese, cucumbers, sprouts, bell peppers, artichoke hearts & onions.',
+    imgUrl: ''
   },
   {
     title: 'Paleo: Bowl/Wrap/Omelette',
     price: '$8.99',
     desc: 'Eggs, ham, sausage, green peppers & onion',
+    imgUrl: ''
   },
   {
     title: 'Biscuits & Gravy',
     price: '$3.99',
     desc: 'One or Two Biscuit option',
+    imgUrl: ''
   }
 ];
 
