@@ -8,11 +8,11 @@ const ItemDetail = ({ item }) => {
     }
 
     return (
-        <div>
+        <div className="item__modal app__bg">
             <h1>{item.title}</h1>
             <p>{item.price}</p>
             <p>{item.desc}</p>
-            <Image src={item.imgUrl} alt={item.title} width={100} height={100} />
+            <Image src={item.imgUrl} alt={item.title} width={400} height={400} />
         </div>
     )
 }

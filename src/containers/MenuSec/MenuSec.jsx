@@ -12,6 +12,25 @@ const Menu = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
 
+  const customStyles = {
+    content : {
+      top                   : '50%',
+      left                  : '50%',
+      right                 : 'auto',
+      bottom                : 'auto',
+      marginRight           : '-50%',
+      transform             : 'translate(-50%, -50%)',
+      backgroundColor       : 'transparent',
+      border                : 'none',
+      overflow              : 'auto'
+    },
+    overlay: {
+      backgroundColor       : 'rgba(0, 0, 0, 0.75)', // This creates a darkened background
+      zIndex                : 100
+    }
+  };
+  
+
   const openModal = (item) => {
     setCurrentItem(item);
     setModalIsOpen(true);
