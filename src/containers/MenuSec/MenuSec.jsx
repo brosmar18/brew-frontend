@@ -1,11 +1,11 @@
 'use client';
 
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { SubHeader, MenuItem } from '@/components';
 import data from '@/constants/data';
 import Image from 'next/image';
 import './MenuSec.scss';
-import ItemDetail  from '../ItemDetail/ItemDetail';
+import ItemDetail from '../ItemDetail/ItemDetail';
 import Modal from 'react-modal';
 
 const Menu = () => {
@@ -13,23 +13,23 @@ const Menu = () => {
   const [currentItem, setCurrentItem] = useState(null);
 
   const customStyles = {
-    content : {
-      top                   : '50%',
-      left                  : '50%',
-      right                 : 'auto',
-      bottom                : 'auto',
-      marginRight           : '-50%',
-      transform             : 'translate(-50%, -50%)',
-      backgroundColor       : 'transparent',
-      border                : 'none',
-      overflow              : 'auto'
+    content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)',
+      backgroundColor: 'transparent',
+      border: 'none',
+      overflow: 'auto'
     },
     overlay: {
-      backgroundColor       : 'rgba(0, 0, 0, 0.75)', // This creates a darkened background
-      zIndex                : 100
+      backgroundColor: 'rgba(0, 0, 0, 0.75)', // This creates a darkened background
+      zIndex: 100
     }
   };
-  
+
 
   const openModal = (item) => {
     setCurrentItem(item);
@@ -79,10 +79,11 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
         <ItemDetail item={currentItem} />
         <button onClick={closeModal}>Close</button>
       </Modal>
+
     </div>
   )
 }
