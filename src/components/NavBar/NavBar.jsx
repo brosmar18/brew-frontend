@@ -4,7 +4,6 @@ import React, {useState} from 'react'
 import Link from 'next/link';
 import './NavBar.scss';
 import {MdMenu, MdRestaurantMenu} from 'react-icons/md';
-import {motion} from 'framer-motion';
 import Image from 'next/image';
 
 
@@ -31,10 +30,7 @@ const NavBar = () => {
         <div className="nav__mobile">
         <MdMenu fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
-            <motion.div
-                whileInView={{x: [300, 0]}}
-                transition={{duration: 0.85, ease: 'easeOut'}}
-            >
+            <div>
                 <MdRestaurantMenu onClick={() => setToggleMenu(false)} />
                 <ul>
                     {['Home', 'Menu', 'Catering', 'About', 'Contact'].map((item) => (
@@ -43,7 +39,7 @@ const NavBar = () => {
                         </li>
                     ))}
                 </ul>
-            </motion.div>
+            </div>
         )}
       </div>
     </nav>

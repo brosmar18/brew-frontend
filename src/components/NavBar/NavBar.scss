@@ -75,7 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-black);
+    background-color: rgba(21, 21, 21, 0.35);
 
     svg {
         width: 70%;
@@ -90,7 +90,7 @@
         right: 0;
         z-index: 5;
         padding: 1rem;
-        width: 80%;
+        width: 85%;
         height: 100vh;
         display: flex;
         justify-content: flex-end;
