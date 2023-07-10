@@ -28,10 +28,13 @@
     flex: 1;
     margin: 1rem;
     text-align: center;
+    width: auto;
+    height: auto;
 }
 
 .app__footer-links_logo img:first-child {
     width: 210px;
+    height: auto;
     margin-bottom: 0.75rem;
 }
 
