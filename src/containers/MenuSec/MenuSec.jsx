@@ -31,6 +31,10 @@ const Menu = () => {
           <Image src='/menu.png' alt="menu__img" width={410} height={721} />
         </div> */}
 
+        <div className='menu__spatula flex__center'>
+          <Image src='/spatula.png' alt='spatula' width={107} height={910} />
+        </div>
+
         <div className="app__specialMenu-menu_lunch  flex__center">
           <p className="app__specialMenu-menu_heading">Lunch</p>
           <div className="app__specialMenu_menu_items">
