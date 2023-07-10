@@ -1,14 +1,18 @@
 import React from 'react';
 import './ItemDetail.scss';
-import data from '@/constants/data';
+import Image from 'next/image';
 
+const ItemDetail = ({ item }) => {
+    if (!item) {
+        return null;
+    }
 
-const ItemDetail = () => {
     return (
         <div>
-            <h1>Item Title</h1>
-            <p>Info/Description goes here</p>
-            <p>Image would go here</p>
+            <h1>{item.title}</h1>
+            <p>{item.price}</p>
+            <p>{item.desc}</p>
+            <Image src='/default-item-image.png' alt={item.title} width={100} height={100} />
         </div>
     )
 }
