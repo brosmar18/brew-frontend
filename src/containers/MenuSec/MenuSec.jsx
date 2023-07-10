@@ -26,11 +26,7 @@ const Menu = () => {
             ))}
           </div>
         </div>
-
-        {/* <div className="app__specialMenu-menu_img">
-          <Image src='/menu.png' alt="menu__img" width={410} height={721} />
-        </div> */}
-
+        
         <div className='menu__spatula flex__center'>
           <Image src='/spatula.png' alt='spatula' width={107} height={910} />
         </div>
