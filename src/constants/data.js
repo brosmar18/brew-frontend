@@ -5,16 +5,18 @@ const breakfast = [
     title: 'Breakfast Burrito',
     price: '$8.99',
     desc: 'Eggs, cheese & refried beans, your choice of meat and/or veggies',
+    imgUrl: '/burrito.png'
   },
   {
     title: 'Egg & Cheese Sandwhich',
     price: '$6.99',
     desc: 'Your choice of bread: white, wheat, sourdough, croissant, or gluten-free',
+    imgUrl: '/eggCheeseSandwhich.png'
   },
   {
-    title: 'Mother Eartch: Bowl/Wrap/Omelette',
+    title: 'Mother Earth: Bowl/Wrap/Omelette',
     price: '$8.99',
-    desc: 'Eggs, green peppers, onions, mushcrooms, celery & cheese',
+    desc: 'Eggs, green peppers, onions, mushrooms, celery & cheese',
   },
   {
     title: 'Aesops: Bowl/Wrap/Omelette',
@@ -24,7 +26,7 @@ const breakfast = [
   {
     title: 'Paleo: Bowl/Wrap/Omelette',
     price: '$8.99',
-    desc: 'Eggs, ham, sausage, green pepper & onion',
+    desc: 'Eggs, ham, sausage, green peppers & onion',
   },
   {
     title: 'Biscuits & Gravy',
