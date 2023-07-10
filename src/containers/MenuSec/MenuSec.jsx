@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+
+import React, {useState} from 'react'
 import { SubHeader, MenuItem } from '@/components';
 import data from '@/constants/data';
 import Image from 'next/image';
