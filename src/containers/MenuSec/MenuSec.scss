@@ -1,11 +1,23 @@
 .app__specialMenu {
     flex-direction: column;
+    position: relative;
 
 }
 
 .app__specialMenu-title {
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.menu__img-overlay {
+    position: absolute;
+    inset: 0;
+
+    img {
+        width: 491px;;
+        height: 515px;
+        z-index: 0;
+    }
 }
 
 .app__specialMenu-menu {
