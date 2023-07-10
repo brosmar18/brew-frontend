@@ -17,25 +17,25 @@ const breakfast = [
     title: 'Mother Earth: Bowl/Wrap/Omelette',
     price: '$8.99',
     desc: 'Eggs, green peppers, onions, mushrooms, celery & cheese',
-    imgUrl: ''
+    imgUrl: '/motherEarth.png'
   },
   {
     title: 'Aesops: Bowl/Wrap/Omelette',
     price: '$8.99',
     desc: 'Eggs, hummus, feta cheese, cucumbers, sprouts, bell peppers, artichoke hearts & onions.',
-    imgUrl: ''
+    imgUrl: '/aesopsOmelette.png'
   },
   {
     title: 'Paleo: Bowl/Wrap/Omelette',
     price: '$8.99',
     desc: 'Eggs, ham, sausage, green peppers & onion',
-    imgUrl: ''
+    imgUrl: '/paleoBowl.png'
   },
   {
     title: 'Biscuits & Gravy',
     price: '$3.99',
     desc: 'One or Two Biscuit option',
-    imgUrl: ''
+    imgUrl: '/biscuitsGravy.png'
   }
 ];
 
@@ -44,31 +44,37 @@ const lunch = [
     title: 'Curry Chicken Sandwhich',
     price: '$8.99',
     desc: 'Curry mayo chicken salad on a croissant',
+    imgUrl: 'curryChicken.png'
   },
   {
     title: "Turkey Confetta Sandwhich",
     price: '$8.99',
     desc: 'Turkey, cranberry & feta cheese',
+    imgUrl: 'turkeyConfetta.png'
   },
   {
     title: 'BBQ Pulled Pork Sliders',
     price: '$8.99',
     desc: '2 BBQ pulled pork & sauce on rolls',
+    imgUrl: '/porkSliders.png'
   },
   {
     title: 'Mango Chutney Salami Sanwhich',
     price: '$8.99',
     desc: 'Ham, salami, mango chutney & goat cheese',
+    imgUrl: '/mangoChutney.png'
   },
   {
     title: 'Veggie Melt',
     price: '$8.99',
     desc: 'Hummus, sautted veggies & white cheddar',
+    imgUrl: 'veggieMelt.png'
   },
   {
     title: 'Medeteranian wrap',
     price: '$8.99',
     desc: 'Hummus, quinoa, mixed greens, cucumber, feta cheese, olives, onion & golden raisans.',
+    imgUrl: '/medWrap.png'
   }
 ];
 
