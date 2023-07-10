@@ -17,9 +17,9 @@ const NavBar = () => {
         <Image src="/logo.png" alt='logo' width={150} height={20} className='nav__logo-img' />
         </div>
         <ul className='nav__links'>
-            {['home', 'menu', 'catering', 'about', 'contact'].map((item) => (
+            {['Home', 'Menu', 'Catering', 'About', 'Contact'].map((item) => (
                 <li key={item} className='p__opensans'>
-                    <Link href={item === 'home' ? '/' : `/${item}`}>{item}</Link>
+                    <Link href={item === 'Home' ? '/' : `/${item}`}>{item}</Link>
                 </li>
             ))}
         </ul>
@@ -37,9 +37,9 @@ const NavBar = () => {
             >
                 <MdRestaurantMenu onClick={() => setToggleMenu(false)} />
                 <ul>
-                    {['home', 'menu', 'catering', 'about', 'contact'].map((item) => (
+                    {['Home', 'Menu', 'Catering', 'About', 'Contact'].map((item) => (
                         <li key={item}>
-                            <Link className='nav__mobile-link p__opensans' href={item === 'home' ? '/' : `/${item}`} onClick={() => setToggleMenu(false)}>{item}</Link>
+                            <Link className='nav__mobile-link p__opensans' href={item === 'Home' ? '/' : `/${item}`} onClick={() => setToggleMenu(false)}>{item}</Link>
                         </li>
                     ))}
                 </ul>
