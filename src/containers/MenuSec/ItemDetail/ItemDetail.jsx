@@ -1,5 +1,6 @@
 import React from 'react';
 import './ItemDetail.scss';
+import data from '@/constants/data';
 
 const ItemDetail = () => {
     return (
