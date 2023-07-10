@@ -17,9 +17,9 @@ const Menu = () => {
           <p className="app__specialMenu-menu_heading">Breakfast</p>
           <div className="app__specialMenu_menu_items">
             {data.breakfast.map((breakfastItem, index) => (
-              <div>
+              <div className='app__menu-items'>
                 <MenuItem key={breakfastItem.title + index} title={breakfastItem.title} price={breakfastItem.price} desc={breakfastItem.desc} />
-                <button type="button" className="custom__button">View More</button>
+                <button type="button" className="custom__button app__menu-button">View Item</button>
               </div>
             ))}
           </div>
@@ -33,9 +33,9 @@ const Menu = () => {
           <p className="app__specialMenu-menu_heading">Lunch</p>
           <div className="app__specialMenu_menu_items">
             {data.lunch.map((cocktail, index) => (
-              <div>
+              <div className='app__menu-items'>
                 <MenuItem key={cocktail.title + index} title={cocktail.title} price={cocktail.price} desc={cocktail.desc} />
-                <button type="button" className="custom__button">View More</button>
+                <button type="button" className="custom__button app__menu-button">View Item</button>
               </div>
             ))}
           </div>
