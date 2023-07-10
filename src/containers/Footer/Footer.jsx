@@ -19,9 +19,9 @@ const Footer = () => {
                 </div>
 
                 <div className="app__footer-links_logo">
-                    <Image src='/logo.png' alt="footer_logo" width={150} height={20} />
+                    <Image src='/logo.png' alt="logo" width={150} height={20} />
                     <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
-                    <Image src='/spoon.png' className="spoon__img" style={{ marginTop: 15 }} width={45} height={10} />
+                    <Image src='/spoon.png' className="spoon__img" alt='spoon' style={{ marginTop: 15 }} width={45} height={10} />
 
                     <div className="app__footer-links_icons">
                         <FiFacebook />
@@ -39,7 +39,7 @@ const Footer = () => {
                     <p className="p__opensans">Closed</p>
                 </div>
             </div>
-            
+
             <div className="footer__copyright">
                 <p className="p__opensans">Brewhemia. All Rights reserved.</p>
             </div>
