@@ -11,7 +11,9 @@ const Menu = () => {
         <SubHeader title="Menu that fits your palatte" />
         <h1 className="headtext__cormorant">Our Menu</h1>
       </div>
-
+      <div className='menu__img-overlay flex__center'>
+        <Image src='/mug.png' alt='mug' width={312} height={320} />
+      </div>
       <div className="app__specialMenu-menu">
         <div className="app__specialMenu-menu_breakfast  flex__center">
           <p className="app__specialMenu-menu_heading">Breakfast</p>
@@ -25,9 +27,9 @@ const Menu = () => {
           </div>
         </div>
 
-        <div className="app__specialMenu-menu_img">
+        {/* <div className="app__specialMenu-menu_img">
           <Image src='/menu.png' alt="menu__img" width={410} height={721} />
-        </div>
+        </div> */}
 
         <div className="app__specialMenu-menu_lunch  flex__center">
           <p className="app__specialMenu-menu_heading">Lunch</p>
