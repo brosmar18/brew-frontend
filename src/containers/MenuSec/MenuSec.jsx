@@ -93,7 +93,14 @@ const Menu = () => {
         </div>
       </div>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
-        <ItemDetail item={allItems[currentIndex]} closeModal={closeModal} goBack={goBack} goForward={goForward} />
+        <ItemDetail 
+            item={allItems[currentIndex]} 
+            closeModal={closeModal} 
+            goBack={goBack} 
+            goForward={goForward} 
+            showBackArrow={currentIndex > 0} 
+            showForwardArrow={currentIndex < allItems.length - 1} 
+        />
       </Modal>
     </div>
   )
