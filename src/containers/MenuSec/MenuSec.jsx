@@ -10,7 +10,31 @@ import Modal from 'react-modal';
 
 const Menu = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [currentItem, setCurrentItem] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(-1); 
+
+  const allItems = [...data.breakfast, ...data.lunch]; 
+
+  const openModal = (index) => {
+    setCurrentIndex(index);
+    setModalIsOpen(true);
+  }
+
+  const closeModal = () => {
+    setCurrentIndex(-1);
+    setModalIsOpen(false);
+  }
+
+  const goBack = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  }
+
+  const goForward = () => {
+    if (currentIndex < allItems.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  }
 
   const customStyles = {
     content: {
@@ -30,21 +54,10 @@ const Menu = () => {
     }
   };
 
-
-  const openModal = (item) => {
-    setCurrentItem(item);
-    setModalIsOpen(true);
-  }
-
-  const closeModal = () => {
-    setCurrentItem(null);
-    setModalIsOpen(false);
-  }
-
   return (
     <div className="app__specialMenu flex__center section__padding app__bg" id="menu">
       <div className="app__specialMenu-title">
-        <SubHeader title="Menu that fits your palatte" />
+        <SubHeader title="Menu that fits your palate" />
         <h1 className="headtext__cormorant">Our Menu</h1>
       </div>
       <div className='menu__img-overlay flex__center'>
@@ -57,7 +70,7 @@ const Menu = () => {
             {data && data.breakfast && data.breakfast.map((breakfastItem, index) => (
               <div key={breakfastItem.title + index} className='app__menu-items'>
                 <MenuItem title={breakfastItem.title} price={breakfastItem.price} desc={breakfastItem.desc} />
-                <button type="button" className="custom__button app__menu-button" onClick={() => openModal(breakfastItem)}>View Item</button>
+                <button type="button" className="custom__button app__menu-button" onClick={() => openModal(index)}>View Item</button>
               </div>
             ))}
           </div>
@@ -73,17 +86,15 @@ const Menu = () => {
             {data && data.lunch && data.lunch.map((lunchItem, index) => (
               <div key={lunchItem.title + index} className='app__menu-items'>
                 <MenuItem title={lunchItem.title} price={lunchItem.price} desc={lunchItem.desc} />
-                <button type="button" className="custom__button app__menu-button" onClick={() => openModal(lunchItem)}>View Item</button>
+                <button type="button" className="custom__button app__menu-button" onClick={() => openModal(data.breakfast.length + index)}>View Item</button>
               </div>
             ))}
           </div>
         </div>
       </div>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles}>
-        <ItemDetail item={currentItem} closeModal={closeModal} />
+        <ItemDetail item={allItems[currentIndex]} closeModal={closeModal} goBack={goBack} goForward={goForward} />
       </Modal>
-
-
     </div>
   )
 }
