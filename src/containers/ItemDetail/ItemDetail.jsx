@@ -1,5 +1,3 @@
-// ItemDetail.jsx
-
 import React from 'react';
 import './ItemDetail.scss';
 import Image from 'next/image';
