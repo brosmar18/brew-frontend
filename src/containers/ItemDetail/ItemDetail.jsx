@@ -8,7 +8,7 @@ const ItemDetail = () => {
     const renderCard = (item, index) => {
         return (
             <div key={index} className='card'>
-                <Image src={item.imgUrl} alt={item.title} width={100} height={100} />
+                <Image src={item.imgUrl} alt={item.title} width={200} height={200} />
                 <h3 className='p__cormorant' style={{color: '#DCCA87'}}>{item.title}</h3>
                 <p className='p__cormorant'>{item.price}</p>
                 <p className='p__opensans'>{item.desc}</p>

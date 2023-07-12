@@ -42,9 +42,16 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(221, 221, 221, 0.80);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
 
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(221, 221, 221, 0.80);
+    }
+
+    img {
+        margin: 0 auto;
     }
 
     h3 {
