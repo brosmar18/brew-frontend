@@ -21,7 +21,7 @@ const ItemDetail = () => {
             <h2 className='headtext__cormorant'>The Food You've Been Craving</h2>
             <div className='menu-items__tabs'>
                 {['breakfast', 'lunch', 'drinks'].map((item, index) => (
-                    <p className='p__cormorant' key={index}>{item}</p>
+                    <p className='p__cormorant menu-items__tabs-item' key={index}>{item}</p>
                 ))}
             </div>
             <div className='menu-items__cards'>

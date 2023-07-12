@@ -3,3 +3,28 @@
     width: 100%;
     flex-direction: column;
 }
+
+.menu-items__tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4rem 0 2rem;
+
+    .menu-items__tabs-item {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        color: var(--black-color); 
+        font-weight: 800;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0.5rem;
+
+        &:hover {
+            background-color:var(--primary-color);
+            color: var(--text-color);
+        }
+    }
+}
