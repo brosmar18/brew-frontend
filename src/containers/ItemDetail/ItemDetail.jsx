@@ -27,6 +27,7 @@ const ItemDetail = () => {
             <div className='menu-items__cards'>
                     {data.breakfast.map(renderCard)}
                     {data.lunch.map(renderCard)}
+                    {data.drinks.map(renderCard)}
             </div>
         </section>
     )
