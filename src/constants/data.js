@@ -91,6 +91,50 @@ const awards = [
   },
 ];
 
-const data = {breakfast, lunch, awards};
+const drinks = [
+  {
+    title: 'Latte',
+    price: '$3.99',
+    desc: 'Espresso with steamed milk and a touch of foam',
+    imgUrl: '/latte.png'
+  },
+  {
+    title: 'Cappuccino',
+    price: '$3.99',
+    desc: 'Equal parts of espresso, steamed milk, and foam',
+    imgUrl: '/cappuccino.png'
+  },
+  {
+    title: 'Americano',
+    price: '$2.99',
+    desc: 'Espresso shots topped with hot water',
+    imgUrl: '/americano.png'
+  },
+  {
+    title: 'Espresso',
+    price: '$2.50',
+    desc: 'Full-bodied and strong coffee',
+    imgUrl: '/espresso.png'
+  },
+  {
+    title: 'Mocha',
+    price: '$4.50',
+    desc: 'Espresso with steamed milk and chocolate',
+    imgUrl: '/mocha.png'
+  },
+  {
+    title: 'Iced Latte',
+    price: '$4.50',
+    desc: 'Espresso and chilled milk over ice',
+    imgUrl: '/icedLatte.png'
+  },
+  {
+    title: 'Cold Brew',
+    price: '$3.99',
+    desc: 'Brewed with cold water for a smooth, full-bodied flavor',
+    imgUrl: '/coldBrew.png'
+  },
+];
 
+const data = {breakfast, lunch, drinks, awards};
 export default data;

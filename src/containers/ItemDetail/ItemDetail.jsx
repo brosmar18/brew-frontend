@@ -1,37 +1,58 @@
-// ItemDetail.jsx
-
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import './ItemDetail.scss';
 import Image from 'next/image';
-import { IoMdArrowBack, IoMdArrowForward, IoMdClose } from 'react-icons/io';
+import data from '@/constants/data';
 
-const ItemDetail = ({ item, closeModal, goBack, goForward, showBackArrow, showForwardArrow }) => {
-    if (!item) {
-        return null;
-    }
+const ItemDetail = () => {
+    const [activeTab, setActiveTab] = useState('breakfast');
+
+    const handleTabChange = (tabName) => {
+        setActiveTab(tabName);
+    };
+
+    const renderCard = (item, index) => {
+        return (
+            <div key={index} className='card'>
+                <Image src={item.imgUrl} alt={item.title} width={250} height={250} />
+                <h3 className='p__cormorant' style={{color: '#DCCA87'}}>{item.title}</h3>
+                <p className='p__cormorant'>{item.price}</p>
+                <p className='p__opensans'>{item.desc}</p>
+            </div>
+        );
+    };
+
+    const renderTabContent = () => {
+        switch (activeTab) {
+            case 'breakfast':
+                return data.breakfast.map(renderCard);
+            case 'lunch':
+                return data.lunch.map(renderCard);
+            case 'drinks':
+                return data.drinks.map(renderCard);
+            default:
+                return null;
+        }
+    };
 
     return (
-        <div className="item__modal app__bg">
-            <h1>{item.title}</h1>
-            <p>{item.price}</p>
-            <p>{item.desc}</p>
-            <Image src={item.imgUrl} alt={item.title} width={400} height={400} />
-            <div className='nav__buttons'>
-                {showBackArrow && (
-                    <button className="back-button" onClick={goBack}>
-                        <IoMdArrowBack size={24} />
-                    </button>
-                )}
-                <button className='close-button' onClick={closeModal}>
-                    <IoMdClose size={24} />
-                </button>
-                {showForwardArrow && (
-                    <button className="forward-button" onClick={goForward}>
-                        <IoMdArrowForward size={24} />
-                    </button>
-                )}
+        <section className='menu-items flex__center section__padding app__bg'>
+            <h2 className='headtext__cormorant'>A Closer Look</h2>
+            <div className='menu-items__tabs'>
+                {['breakfast', 'lunch', 'drinks'].map((tabName, index) => (
+                    <p 
+                        className={`p__cormorant menu-items__tabs-item ${activeTab === tabName ? 'active' : ''}`} 
+                        onClick={() => handleTabChange(tabName)}
+                        key={index}
+                    >
+                        {tabName}
+                    </p>
+                ))}
             </div>
-        </div>
+            <div className='menu-items__cards'>
+                    {renderTabContent()}
+            </div>
+        </section>
     )
 }
 
