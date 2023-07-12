@@ -73,6 +73,10 @@
 }
 
 @media screen and (max-width: 480px) {
+    .item__modal {
+        width: 90%;
+        margin: 2rem auto;
+    }
     h1 {
         font-size: 30px;
     }
