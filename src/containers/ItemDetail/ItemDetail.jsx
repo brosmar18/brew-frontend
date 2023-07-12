@@ -7,6 +7,17 @@ import data from '@/constants/data';
 
 const ItemDetail = () => {
 
+    const renderCard = (item, index) => {
+        return (
+            <div key={index} className='card'>
+                <Image src={item.imgUrl} alt={item.title} width={100} height={100} />
+                <h3>{item.title}</h3>
+                <p>{item.price}</p>
+                <p>{item.desc}</p>
+            </div>
+        );
+    };
+
     return (
         <section className='menu-items flex__center section__padding app__bg'>
             <h2 className='headtext__cormorant'>The Food You've Been Craving</h2>
