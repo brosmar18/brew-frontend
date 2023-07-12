@@ -26,9 +26,15 @@
             background-color:var(--primary-color);
             color: var(--text-color);
         }
+
         @media screen and (min-width: 2000px) {
             padding: 1rem 2rem;
         }
+    }
+
+    .active {
+        background-color: var(--primary-color);
+        color: var(--text-color);
     }
 }
 
