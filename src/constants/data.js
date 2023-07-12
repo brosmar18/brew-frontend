@@ -96,7 +96,7 @@ const drinks = [
     title: 'Latte',
     price: '$3.99',
     desc: 'Espresso with steamed milk and a touch of foam',
-    imgUrl: ''
+    imgUrl: '/latte.png'
   },
   {
     title: 'Cappuccino',
