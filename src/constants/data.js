@@ -91,6 +91,62 @@ const awards = [
   },
 ];
 
-const data = {breakfast, lunch, awards};
+const drinks = [
+  {
+    title: 'Latte',
+    price: '$3.99',
+    desc: 'Espresso with steamed milk and a touch of foam',
+    imgUrl: ''
+  },
+  {
+    title: 'Cappuccino',
+    price: '$3.99',
+    desc: 'Equal parts of espresso, steamed milk, and foam',
+    imgUrl: ''
+  },
+  {
+    title: 'Americano',
+    price: '$2.99',
+    desc: 'Espresso shots topped with hot water',
+    imgUrl: ''
+  },
+  {
+    title: 'Espresso',
+    price: '$2.50',
+    desc: 'Full-bodied and strong coffee',
+    imgUrl: ''
+  },
+  {
+    title: 'Mocha',
+    price: '$4.50',
+    desc: 'Espresso with steamed milk and chocolate',
+    imgUrl: ''
+  },
+  {
+    title: 'Iced Latte',
+    price: '$4.50',
+    desc: 'Espresso and chilled milk over ice',
+    imgUrl: ''
+  },
+  {
+    title: 'Iced Americano',
+    price: '$3.50',
+    desc: 'Espresso shots topped with cold water and served over ice',
+    imgUrl: ''
+  },
+  {
+    title: 'Cold Brew',
+    price: '$3.99',
+    desc: 'Brewed with cold water for a smooth, full-bodied flavor',
+    imgUrl: ''
+  },
+  {
+    title: 'Frappuccino',
+    price: '$4.99',
+    desc: 'Iced, blended coffee drink with milk and flavorings',
+    imgUrl: ''
+  },
+];
 
+const data = {breakfast, lunch, drinks, awards};
 export default data;
