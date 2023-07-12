@@ -1,9 +1,15 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import './ItemDetail.scss';
 import Image from 'next/image';
 import data from '@/constants/data';
 
 const ItemDetail = () => {
+    const [activeTab, setActiveTab] = useState('breakfast');
+
+    const handleTabChange = (tabName) => {
+        setActiveTab(tabName);
+    };
 
     const renderCard = (item, index) => {
         return (
@@ -16,18 +22,35 @@ const ItemDetail = () => {
         );
     };
 
+    const renderTabContent = () => {
+        switch (activeTab) {
+            case 'breakfast':
+                return data.breakfast.map(renderCard);
+            case 'lunch':
+                return data.lunch.map(renderCard);
+            case 'drinks':
+                return data.drinks.map(renderCard);
+            default:
+                return null;
+        }
+    };
+
     return (
         <section className='menu-items flex__center section__padding app__bg'>
             <h2 className='headtext__cormorant'>The Food You've Been Craving</h2>
             <div className='menu-items__tabs'>
-                {['breakfast', 'lunch', 'drinks'].map((item, index) => (
-                    <p className='p__cormorant menu-items__tabs-item' key={index}>{item}</p>
+                {['breakfast', 'lunch', 'drinks'].map((tabName, index) => (
+                    <p 
+                        className={`p__cormorant menu-items__tabs-item ${activeTab === tabName ? 'active' : ''}`} 
+                        onClick={() => handleTabChange(tabName)}
+                        key={index}
+                    >
+                        {tabName}
+                    </p>
                 ))}
             </div>
             <div className='menu-items__cards'>
-                    {data.breakfast.map(renderCard)}
-                    {data.lunch.map(renderCard)}
-                    {data.drinks.map(renderCard)}
+                    {renderTabContent()}
             </div>
         </section>
     )
