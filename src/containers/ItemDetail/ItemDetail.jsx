@@ -37,7 +37,7 @@ const ItemDetail = () => {
 
     return (
         <section className='menu-items flex__center section__padding app__bg'>
-            <h2 className='headtext__cormorant'>The Food You've Been Craving</h2>
+            <h2 className='headtext__cormorant'>A Closer Look</h2>
             <div className='menu-items__tabs'>
                 {['breakfast', 'lunch', 'drinks'].map((tabName, index) => (
                     <p 
