@@ -4,6 +4,7 @@ import React from 'react';
 import './ItemDetail.scss';
 import Image from 'next/image';
 import { IoMdArrowBack, IoMdArrowForward, IoMdClose } from 'react-icons/io';
+import data from '@/constants/data';
 
 const ItemDetail = () => {
 
